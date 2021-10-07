@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+    <style>
+        .table-common {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .col-border {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:yellow">
+        <br>
+        <h1 style="background-color: red"> This is Heading</h1>
+        <p style="background-color: green"> This is paagraph</p>
+        <br><br><br><br>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <label for="border_image">Create a link of an image:</label>
+        <a href="Assignment2.html"><img src="images/smiley.jpg" alt="smiley with border" id="border_image"
+                style="width:50px;height:50px; border: 1px solid #555;"></a>
+        <br><br>
+        <label for="no_border_image">No border around the image, but still a link:</label>
+        <a href="Assignment2.html"><img src="images/smiley.jpg" alt="smiley without border" id="no_border_image"
+                style="width:50px;height:50px;"></a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <p><b>One column:</b></p>
+        <table class="table-common">
+            <tr style="border:1px solid black;">
+                <th>100</th>
+            </tr>
+        </table>
+
+        <p><b>One row and three columns:</b></p>
+        <table class="table-common">
+            <tr>
+                <th class="col-border">100</th>
+                <th class="col-border">200</th>
+                <th class="col-border">300</th>
+            </tr>
+        </table>
+
+        <p><b>Two row and three columns:</b></p>
+        <table class="table-common">
+            <tr>
+                <th class="col-border">100</th>
+                <th class="col-border">200</th>
+                <th class="col-border">300</th>
+            </tr>
+            <tr>
+                <th class="col-border">400</th>
+                <th class="col-border">500</th>
+                <th class="col-border">600</th>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <p><b>This table has border</b></p>
+        <table class="table-common">
+            <tr>
+                <th class="col-border">100</th>
+                <th class="col-border">200</th>
+                <th class="col-border">300</th>
+            </tr>
+            <tr>
+                <th class="col-border">400</th>
+                <th class="col-border">500</th>
+                <th class="col-border">600</th>
+            </tr>
+        </table>
+
+        <p><b>This table has no border</b></p>
+        <table>
+            <tr>
+                <th>100</th>
+                <th>200</th>
+                <th>300</th>
+            </tr>
+            <tr>
+                <th>400</th>
+                <th>500</th>
+                <th>600</th>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <p><b>Numbered list:</b></p>
+        <ol>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>lemons</li>
+            <li>oranges</li>
+        </ol>
+
+        <p><b>Letters list:</b></p>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>lemons</li>
+            <li>oranges</li>
+        </ol>
+
+        <p><b>Lowercase letters list:</b></p>
+        <ol style="list-style-type: lower-alpha;">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>lemons</li>
+            <li>oranges</li>
+        </ol>
+
+        <p><b>Roman numbers list:</b></p>
+        <ol style="list-style-type: upper-roman">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>lemons</li>
+            <li>oranges</li>
+        </ol>
+
+        <p><b>Lowercase roman numbers list:</b></p>
+        <ol style="list-style-type: lower-roman">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>lemons</li>
+            <li>oranges</li>
+        </ol>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <form action="">
+            <input type="checkbox" id="bike" name="bike" value="bike">
+            <label for="bike">I have a bike</label>
+            <br><br>
+            <input type="checkbox" id="car" name="car" value="car">
+            <label for="car">I have a car</label>
+            <br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <table class="table-common">
+            <tr>
+              <td class="col-border" colspan="2" style="background-color:rgb(19, 104, 19)">top</td>
+            </tr>
+            <tr style="height: 50px;">
+              <td class="col-border" style="background-color: grey;">left</td>
+              <td class="col-border" style="background-color: rgb(184, 179, 179);">right</td>
+            </tr>
+        </table>
+        <br><br>
+        <table class="table-common">
+            <tr>
+              <td class="col-border" style="background-color: rgb(184, 179, 179);">topleft</td>
+              <td class="col-border" style="background-color: grey;">topright</td>
+            </tr>
+            <tr style="height: 50px;">
+              <td class="col-border" style="background-color: grey;">botleft</td>
+              <td class="col-border" style="background-color: rgb(184, 179, 179);">botright</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(153, 213, 236);
+}
+.Q1{
+    background-color: rgb(59, 76, 177);
+}
+.try{
+    background-color: grey;
+}
+h2{
+    text-decoration: line-through;
+  }
+h3{
+    text-decoration: underline;
+  }
+.upper{
+    text-transform: uppercase;
+}
+.b {
+    font-size: small;
+  }
+a:link{
+    color: white;
+}
+a:visited {
+    color : black; 
+    }

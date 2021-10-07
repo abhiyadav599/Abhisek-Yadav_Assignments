@@ -1,0 +1,103 @@
+body {
+        text-align: center;
+      }
+.parallax {
+/* The image used */
+background-image: url("images/m.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+      }
+h1{
+    font-size:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.element {
+    position: static;
+    display: block;
+  }
+  .main {
+    margin: auto;
+    width: 700px;
+    align-items: center;
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+  }
+.labels {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+.pic{
+    margin: auto;
+    display:block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:10px solid bisque;
+}
+
+.heading{
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    text-transform: capitalize;
+    text-shadow: 20px Black;
+    font-style:italic;
+}
+.list{
+  text-align:left;
+}
+.sign{
+    text-align:right;
+}
+@media (max-width: 833px) {
+  .main{
+    width: 70%;
+  }
+
+  .fields {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .dropdown {
+    width: 90%;
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    width: 80%;
+  }
+
+  .fields {
+    width: 80%;
+    float: left;
+  }
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+}
+
+

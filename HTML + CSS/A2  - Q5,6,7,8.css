@@ -1,0 +1,39 @@
+.br {
+    border: 1px solid black;
+}
+.br1{
+
+    border: 2px solid green;
+}
+#T1{
+    text-align: left;
+    border-collapse: collapse;
+    width: 200px;
+  }
+#T2{
+    border: 2px solid green;
+    text-align: left;
+    width: 200px;
+  }
+.heading{
+    background: green;
+    color: white;
+}
+.borders{
+    border: solid ;
+    border-color: red;
+    outline-style: dotted;
+    outline-color: green;
+}
+p{
+    background: skyblue;
+}
+.p1{
+    border: 8px solid black;
+}
+.p2{
+    border: 4px solid black;
+}
+.p3{
+    border: 2px solid black;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="A3 Q2Form.css">
+    <title>Employee Details</title>
+</head>
+
+<body>
+  <main>
+    <h1 >Employee Details</h1>
+    <div class="main">
+      <p id="des">Please fill the employee details in the below form</p>
+      <form id="form" action="nothing">
+        <div class="element">
+          <div class="labels">
+            <label for="name" >Enter Your Full Name:</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="name" class="inputs" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="email" >Enter Your Email:</label>
+          </div>
+          <div class="fields">
+            <input type="email" id="email" class="inputs" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="number">Contact No:</label>
+          </div>
+          <div class="fields">
+            <input type="tel" id="number" class="inputs" placeholder="Phone No." >
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="dropdown"> Gender: </label>
+          </div>
+          <div class="fields">
+            <select name="Date of conference" id="dropdown" class="dropdown">
+                <option value="13">Male</option>
+                <option value="15">Female</option>
+                <option value="17">Others</option>
+            </select>
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="Profession">Select Your Post</label>
+          </div>
+          <div class="fields">
+            <ul id="Profession" style="list-style: none;">
+              <li class="radio">
+                <label>
+                  Analyst
+                  <input name="prof" type="radio" value="1" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Software Engineer Trainee
+                  <input name="prof" type="radio" value="2" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  HR
+                  <input name="prof" type="radio" value="3" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Instructor
+                  <input name="prof" type="radio" value="1" class="user-selection">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="feelings">
+              Select your Skills
+              <br>
+              (Select all that apply)
+            </label>
+          </div>
+          <div class="fields">
+            <ul id="interest" style="list-style: none;">
+              <li class="radio">
+                <label>
+                  <input name="topics" value="1" type="checkbox" class="user-selection">
+                  HTML
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input name="topics" value="2" type="checkbox" class="user-selection">
+                  CSS
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input name="topics" value="3" type="checkbox" class="user-selection">
+                  JAVAScript
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input name="topics" value="4" type="checkbox" class="user-selection">
+                  Angular
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input name="topics" value="5" type="checkbox" class="user-selection">
+                  Python
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input name="topics" value="5" type="checkbox" class="user-selection">
+                  Java
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="element">
+          <div class="labels">
+            <label for="event-details">
+              Any Questions Or Comments?
+            </label>
+          </div>
+          <div class="fields">
+            <textarea id="event-details" class="inputs" style="height: 50px;resize:vertical;font-family: Open Sans Condensed;" name="event-details" cols="1" rows="1" placeholder="Comments..."></textarea>
+          </div>
+        </div>
+        <button class="button" id="submit" type="submit">Submit</button>
+        <button class="button" id="submit" type="submit">Reset</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
