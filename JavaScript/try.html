@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 </title>
+    <link rel="stylesheet" href="Assignment 1.css">
+</head>
+
+<body onload="init()">
+    <input type="text" name="a" id="number" placeholder="Enter a number" />
+    <br><br>
+    <button onclick="sum()">Sum of n number </button>
+    <p id="res"></p>
+
+    <button onclick="sum3or5()">Sum of multiple of 3 or 5</button>
+    <p id="res1"></p>
+
+    <button onclick="evenorodd()">Even or Odd</button>
+    <p id="res2"></p>
+
+    <input type="text" name="flip" id="flip" placeholder="Enter the number of flips" />
+    <button onclick="flip()">calculate</button>
+    <p id="res3"></p>
+
+    <button onclick="leapyear()">Next 20 leap year</button>
+    <p id="res4"></p>
+
+    <button onclick="frame()">res</button>
+    <p id="res5"></p>
+
+    <input type="text" id="GBP" size="10" value="0" onchange="gbpfunc()" />
+    <label for="GBP"> GBP </label>
+
+    <br>
+
+    <input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
+    <label for="USD"> USD </label>
+
+    <br>
+
+    <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
+    <label for="EUR"> EUR </label>
+
+    <br>
+
+    <input type="text" id="CAD" size="10" value="0" onchange="cadfunc()" />
+    <label for="CAD"> CAD </label>
+
+    <br>
+
+    <input type="text" id="AUD" size="10" value="0" onchange="audfunc()" />
+    <label for="AUD"> AUD </label>
+
+    <p>The concat() method concatenates two or more arrays.</p>
+    <button onclick="concat()">Click to concatenate</button>
+    <p id="example"></p>
+    <p id="res6"></p>
+
+    <p>ALternate strings</p>
+    <button onclick="alter()">Click to alternate</button>
+    <p id="res7"></p>
+
+    <p>fibo series</p>
+    <button onclick="fibo()">Click for fibo series</button>
+    <p id="res8"></p>
+
+    <p>reverse array</p>
+    <button onclick="rev()">Click for reverse</button>
+    <p id="res9"></p>
+
+    
+
+    <script src="Assignment 1.js"></script>
+
+
+</body>
+
+</html>
