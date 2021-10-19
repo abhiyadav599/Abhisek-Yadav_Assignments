@@ -1,0 +1,84 @@
+<p>resturant works!</p>
+<div class="container-fluid">
+    <div class="d-flex">
+        <button (click)="clickAddRestro()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add
+            Restaurant</button>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <h1 class="display-4">Restro Dashboard</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+        featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">dekh kya rha hai gharpe ja</a>
+    </p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Res ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Edit / Delete Restaurant</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allRestaurantData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobile}}</td>
+            <td>{{data.address}}</td>
+            <td>
+                <button (click) = "onEditRestro(data)" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> edit</button>&nbsp;
+                <button (click) = "deleteRestaurant(data)" class="btn btn-danger"> delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Restaurant Record Form</h5>
+                <button (click)="clickAddRestro()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" formControlName="name" class="form-control" placeholder="enter restro name"
+                            id="nameInput" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" formControlName="email" class="form-control" placeholder="enter email id"
+                            id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileInput" class="form-label">Mobile</label>
+                        <input type="number" formControlName="mobile" class="form-control" placeholder="enter number"
+                            id="mobileInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="addressInput" class="form-label">address</label>
+                        <input type="text" formControlName="address" class="form-control" placeholder="enter address" id="addressInput">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button *ngIf="showAdd" type="button" class="btn btn-primary" (click) = "addRestaurant()">Add Details</button>
+                <button *ngIf="showBtn" type="button" class="btn btn-primary" (click) = "updateRestaurant()">Update Details</button>
+            </div>
+        </div>
+    </div>
+</div>

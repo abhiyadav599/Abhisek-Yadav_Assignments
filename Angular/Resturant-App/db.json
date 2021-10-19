@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "name": "tapri pro",
+      "email": "tapri@gmail.com",
+      "mobile": 1234567890,
+      "address": "nake ki tapri"
+    },
+    {
+      "id": 4,
+      "name": "aaa",
+      "email": "abc@gmail.com",
+      "mobile": 7894561230,
+      "address": "aaa"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
